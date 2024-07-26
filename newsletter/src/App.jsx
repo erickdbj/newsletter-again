@@ -1,5 +1,5 @@
 import './App.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 function App() {
@@ -38,6 +38,13 @@ function App() {
       }
     }
   };
+
+  useEffect(() => {
+    if (name || email) {
+      setErrors({});
+      setSuccessMessage('');
+    }
+  }, [name, email]);
 
   return (
     <div className='App'>
@@ -91,6 +98,7 @@ function App() {
 
             <form className='signup-newsletter' onSubmit={handleSubmit}>
               <div className='input-group'>
+                <div className='input-solo'>
                 <input 
                   type="text" 
                   placeholder='Digite seu nome'
@@ -98,6 +106,9 @@ function App() {
                   onChange={(e) => setName(e.target.value)}
                 />
                 {errors.name && <p className='error-message'>{errors.name}</p>}
+                </div>
+
+                <div className='input-solo'>
                 <input 
                   type="email" 
                   placeholder='Digite seu e-mail'
@@ -105,6 +116,7 @@ function App() {
                   onChange={(e) => setEmail(e.target.value)}
                 />
                 {errors.email && <p className='error-message'>{errors.email}</p>}
+                </div>
               </div>
 
               <div className='radio-container'>

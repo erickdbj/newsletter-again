@@ -158,6 +158,13 @@ img {
     font-weight: 300;
 }
 
+.input-solo input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .radio-container {
     padding: 1rem 1.5rem;   
     background: #EDEDED;
@@ -233,7 +240,6 @@ button::after {
 
 .error-message {
     color: red;
-    font-size: .75rem;
     text-align: center;
 }
 
@@ -345,16 +351,16 @@ button::after {
         width: 100%;
     }
 
+    .input-solo {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+    }
+
     .radio-group {
         flex-direction: column;
         margin-top: 1rem;
     }
 }
 
-@media screen and (max-width: 1550px) {
-    .newsletter-desk {
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0 auto;
-    }
-}
