@@ -23,7 +23,7 @@ function App() {
       setErrors({});
 
       try {
-        const response = await axios.post('http://localhost:3001/', {
+        const response = await axios.post('http://192.168.1.36:3001/', {
           user: {
             name,
             email,
