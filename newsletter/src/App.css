@@ -364,3 +364,10 @@ button::after {
     }
 }
 
+/* @media screen and (min-width: 1080px) {
+    .newsletter-desk {
+        max-width: 100%;
+        padding-inline: 3rem;
+    }   
+} */
+
