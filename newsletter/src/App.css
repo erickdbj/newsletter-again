@@ -1,0 +1,289 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.header-infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .75rem;
+    gap: 1rem;
+    padding: .75rem 0 .5rem 1.5rem;
+    background: #838383;
+    color: #fff;
+}
+
+.pix-header {
+    display: flex;
+    gap: .25rem;
+}
+
+.menu-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.25rem;
+}
+
+.navigation {
+    display: none;
+}
+
+.logo-ou {
+    margin-left: 2.7rem;
+}
+
+.icons-person-bag {
+    display: flex;
+    gap: 1rem;
+}
+
+.favoritos {
+    display: none;
+}
+
+.shopping-bag {
+    display: flex;
+    font-size: .75rem;
+    gap: .25rem;
+}
+
+.search-bar-mob {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1.25rem;
+}
+
+.search-bar-mob input {
+    width: 100%;
+    height: 40px;
+    padding: 1rem 1.5rem;
+    background-color: #F9F9F9;
+    border: 1px solid #000;
+}
+
+.search-barDesk input {
+    width: 350px;
+    height: 40px;
+    padding: 1rem 1.5rem;
+    background-color: #F9F9F9;
+    border: 1px solid #000;
+}
+
+.search-barDesk {
+    display: none;
+}
+
+#usr {
+    background-image: url('../public/images/procurar.svg');
+    background-repeat: no-repeat;
+    background-position: 95%;
+    background-size: 1rem; 
+    cursor: pointer;
+}
+
+/* Newsletter */
+.newsletter-section {
+    background-color: #F9F9F9;
+    padding: 1rem 1.25rem;
+}
+
+.image-mulher {
+    width: auto;
+    border: 1px solid #000;
+    border-radius: .5rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 1.5rem;
+}
+
+.info-newsletter {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info-newsletter h2 {
+    color: #8A8A8A;
+    font-size: .75rem; 
+    font-weight: 300;
+}
+
+.info-newsletter h3 {
+    font-size: 1.5rem;
+    color: #3E3E3D;
+    margin-bottom: 1.5rem;
+}
+
+.info-newsletter h3 span {
+    font-weight: 500;
+}
+
+.info-newsletter h3 {
+    font-weight: 250;
+}
+
+.signup-newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.input-group input {
+    padding: 1rem 1.5rem;
+    border: none;
+    background: #EDEDED;
+    color: #8A8A8A;
+    font-weight: 300;
+}
+
+.radio-container {
+    padding: 1rem 1.5rem;   
+    background: #EDEDED;
+}
+
+.title-radios {
+    color: #8A8A8A;
+    font-weight: 300;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.radio-group label {
+    color: #3E3E3D;
+    font-weight: 300;
+}
+
+.btn-submit {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    display: flex;
+    padding: 1rem 1.5rem;
+    border-radius: 105px;
+    background: #4B4B4B;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+button::after {
+    content: '';
+    background-image: url('../public/images/next.svg');
+    width: 1.125rem;
+    height: 1.125rem;
+    background-repeat: no-repeat;
+    margin-left: .5rem;
+}
+
+@media only screen and (min-width: 627px) {
+    .image-mulher {
+        display: flex;
+        justify-content: center;
+        border: none;
+        border-radius: .5rem;
+        box-shadow: none;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .header-infos span {
+        display: none;
+    }
+
+
+    .pix-header {
+        display: none;
+    }
+
+    .favoritos {
+        display: block;
+    }
+
+    .menu-hamburguer {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+    
+    .navigation ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        gap: 2rem ;
+        font: 1.125rem ;
+        font-weight: 400;
+        color: #3E3E3D;
+    }
+
+    .logo-ou {
+        margin-right: -.5rem;
+    }
+
+    .search-bar-mob {
+        display: none;
+    }
+
+    .search-barDesk {
+        display: block;
+    }
+
+    .icons-person-bag {
+        display: flex;
+        align-items: center;
+    }
+
+    .icons-person-bag img {
+        width: 1.125rem;
+        height: 1.125rem;
+    }
+
+    .newsletter-section {
+        padding: 0;
+    }
+
+    .newsletter-desk {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 175px 259px;
+        gap: 3rem;
+    }
+
+    .image-mulher {
+        width: auto;
+        justify-content: start;
+        margin: 0;
+        border-radius: .5rem;
+    }
+
+    .infos-newsletter-desk {
+        width: auto;
+    }
+
+    .input-group {
+        flex-direction: row;
+    }
+}
