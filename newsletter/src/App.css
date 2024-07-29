@@ -100,7 +100,9 @@ img {
 
 /* Newsletter */
 .newsletter-section {
+    width: 100%;
     padding: 1rem 1.25rem;
+    box-sizing: border-box;
 }
 
 .image-mulher {
@@ -329,7 +331,10 @@ button::after {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 175px 259px;
+        max-width: 1875px;
+        margin: 0 auto;
+        /* padding: 175px 259px; */
+        padding: 12rem;
         gap: 3rem;
     }
 
@@ -364,10 +369,13 @@ button::after {
     }
 }
 
-/* @media screen and (min-width: 1080px) {
+@media screen and (min-width: 1080px) and (max-width: 1350px) {
+    .newsletter-section {
+        padding: 5rem 2rem;
+    }
+
     .newsletter-desk {
-        max-width: 100%;
-        padding-inline: 3rem;
-    }   
-} */
+        padding: 2rem 5rem;
+    }
+}
 
